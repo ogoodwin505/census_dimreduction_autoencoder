@@ -58,7 +58,16 @@ this will perform all stages of the analysis;
 4. Produce values, plots and maps analysing the geographic distubutions of the errors (Figs 4-7)
 5. Analyse specific Output Areas for results
 
-Each of the notebooks can be run in isolation, with the outputs of each stage being saved to /data. These outputs are all available in the figshare data folder
+Each of the notebooks can be run in isolation, with the outputs of each stage being saved to /data. These outputs are all available in the figshare data folder.
 Stage 2 is time consuming to run (several hours depending on PC) as it trains Autoencoder models for a varity of parameter points.
+
+## Data Sources
+
+All data required to repreduce the results is included in the figshare directory.
+
+The original sources are;
+
+
+
 
 
