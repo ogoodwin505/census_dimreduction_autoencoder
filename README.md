@@ -2,7 +2,7 @@
 
 #  Deep Learning Composite Neighbourhood Structure Using Autoencoders
 
-**FigShare:** ADD LINK
+**FigShare:** [https://figshare.com/s/7aeba52e2b0af082d22d](https://figshare.com/s/7aeba52e2b0af082d22d)
 
 <a href="https://www.python.org"><img alt="Python" src="https://img.shields.io/badge/python%20-%2314354C.svg?&style=for-the-badge&logo=python&logoColor=white"/></a>
 
@@ -18,31 +18,32 @@ Dimensionality reduction techniques are a foundational component of spatial data
 ## Project Structure
 
 ```
-└── 📁UK_Census_Data_21_22/
-    └── 📁data
-        └── 📁output_data_set #The produced dataset including unified Census tables for the UK and associated metadata 
-        └── 📁individual_country_census_data # Downloaded Census tables for England & Wales, Scotland and Northern Ireland
-        └── 📁uk_census_data # Unified Census tables for the United Kingdom 
-        └── 📁uk_matching_output # Outputs from the manual matching process between countries
-        └── 📁validation_plots  # Plots validating the matching for each variable
-    └── 📁src
-        └── reproduce_ukdataset_creation.py #script to fully reproduce the creation of the data set.
-        └── download_census_data_1.py
-        └── produce_uk_tables_2.py
-        └── producevalidation_plots_3.py
-        └── 📁census_download_scripts #scripts for downloading census data from each country
-        └── 📁utils
-    └── README.md
-    └── requirements.txt
+├── 📄 README.md
+├── 📁 data #all input files and outputs for paper
+│   ├── 📁 AE_outputs
+│   ├── 📁 OAC
+│   ├── 📁 census_data
+│   ├── 📁 geofiles
+│   └── 📁 plots
+├── 📁 notebooks #notebooks for reproducing results 
+│   ├── 📄 1_preparedata.ipynb
+│   ├── 📄 2_run_AE.ipynb
+│   ├── 📄 3_ploterror_vs_dim.ipynb
+│   ├── 📄 4_error_by_geo.ipynb
+│   └── 📄 5_analyse_specific_oa.ipynb
+├── 📄 requirements.txt #minimum set of requirements
+└── 📄 uv.lock #to fully replicate the python enviroment used for the paper
+
 ```
 
 ## Installation
 
 1. Clone the repository or download from Figshare:
    ```bash
-   cd UK_Census_Data_21_22
+   cd census-dimreduction-autoencoder
 
-2. Install dependencies using pip and a virtual enviroment
+2. Install dependencies using a virtual enviroment and pip or UV
+For pip
     ```bash
     python -m venv .venv
     source .venv/bin/activate  # On Windows, use `.venv\Scripts\activate`
@@ -63,11 +64,12 @@ Stage 2 is time consuming to run (several hours depending on PC) as it trains Au
 
 ## Data Sources
 
-All data required to repreduce the results is included in the figshare directory.
+All data required to repreduce the results is included in the figshare data directory.
 
 The original sources are;
 
-
-
-
+England and Wales Census Data - [download](https://www.nomisweb.co.uk/sources/census_2021_bulk)
+Geofiles and boundaries - [download](https://geoportal.statistics.gov.uk)
+IMD - [download](https://data.geods.ac.uk/dataset/index-of-multiple-deprivation-imd)
+OAC - [download](https://data.geods.ac.uk/dataset/output-area-classification-2021)
 
