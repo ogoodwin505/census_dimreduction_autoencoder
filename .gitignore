@@ -5,6 +5,7 @@ data/
 keras-mnist-env
 AE_outputs
 notebooks/plots
+notebooks_copy/plots
 
 # From https://raw.githubusercontent.com/github/gitignore/main/Python.gitignore
 
@@ -15,7 +16,7 @@ __pycache__/
 
 # C extensions
 *.so
-
+1
 # Distribution / packaging
 .Python
 build/
